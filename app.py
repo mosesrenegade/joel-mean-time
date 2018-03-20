@@ -1,4 +1,4 @@
-// ./app.py
+#!/usr/bin/python
 import os
 from bottle import route, run, template
 import datetime
