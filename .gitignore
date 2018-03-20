@@ -1,4 +1,5 @@
 #virtualenv and more
+__pycache__
 .Python
 [Bb]in
 [Ii]nclude
