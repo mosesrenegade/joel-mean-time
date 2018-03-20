@@ -2,9 +2,11 @@
 # (c)mosesrenegade
 
 import os
+import bottle
 from bottle import route, run, template
 import datetime
 import pytz
+import gunicorn
 
 @route('/')
 
@@ -40,4 +42,6 @@ if __name__ == '__main__':
     #if os.environ.get('APP_LOCATION') == 'heroku':
     #    run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
     #else:
-    run(host="0.0.0.0", port=8080, server=gunicorn, debug=True)
+    run(host="0.0.0.0", port=8080)
+
+app = bottle.default_app()
