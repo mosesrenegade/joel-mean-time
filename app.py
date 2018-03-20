@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# (c)mosesrenegade
+
 import os
 from bottle import route, run, template
 import datetime
